@@ -1,19 +1,22 @@
 {
-    "name": "profile_website",
-    "version": "1.0.0",
-    "description": "Web Developer Profile",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js",
-        "watch": "nodemon server.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.17.1",
-        "mongoose": "^6.2.10",
-        "morgan": "^1.9.1",
-        "serve": "^13.0.2"
-    }
+  "name": "profile_website",
+  "version": "1.0.0",
+  "description": "Web Developer Profile",
+  "main": "server.js",
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.9.1",
+    "serve": "^13.0.2"
+  }
 }
